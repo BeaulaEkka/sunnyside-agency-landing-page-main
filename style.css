@@ -1,0 +1,369 @@
+:root {
+  --Soft-red: hsl(7, 99%, 70%);
+  --Yellow: hsl(51, 100%, 49%);
+  --Dark-desaturated-cyan-graphic-design-text: hsl(167, 40%, 24%);
+  --Dark-blue-photography-text: hsl(198, 62%, 26%);
+  --Dark-moderate-cyan-footer: hsl(168, 34%, 41%);
+  --light-cyan-footer: hwb(168 56% 15%);
+
+  /* ### Neutral */
+
+  --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --Dark-grayish-blue: hsl(232, 10%, 55%);
+  --Grayish-blue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+p {
+  font-family: "Barlow", serif;
+}
+
+body img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  text-align: center;
+  padding: 5rem;
+}
+
+.desktop {
+  display: none;
+}
+.creatives {
+  position: relative;
+  padding-bottom: 0px;
+}
+
+.traingle {
+  width: 50px;
+  color: red;
+  height: 50px;
+  z-index: 20;
+  position: absolute;
+}
+.creatives--nav {
+  position: absolute;
+  top: 6rem;
+  background-color: var(--White);
+  width: 90%;
+  margin: auto;
+  left: 5%;
+  color: var(--Grayish-blue);
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 1rem;
+  z-index: 10;
+}
+
+.creatives--nav li {
+  padding: 1rem;
+}
+
+.creatives--logo {
+  position: absolute;
+  left: 1.5rem;
+  top: 2rem;
+  width: 40%;
+}
+.creatives-hamburgermenu {
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+  width: 7%;
+}
+.creatives-arrowdown {
+  position: absolute;
+  z-index: 2;
+  top: 15rem;
+  left: 45%;
+  width: 10%;
+}
+.creatives h1 {
+  position: absolute;
+  top: 8rem;
+  left: 0%;
+  right: 0%;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.4rem;
+}
+.creatives--heroimg {
+  margin-bottom: -4px;
+}
+.hide {
+  display: none;
+}
+.transform--image {
+  margin-top: 0px;
+}
+.transform--text,
+.standout--text {
+  padding: 2rem 1rem;
+}
+.transform--text p,
+.standout--text p,
+.textp {
+  font-size: clamp(0.8rem, 0.6301rem + 0.7249vw, 1.1rem);
+  font-weight: 200;
+  color: var(--Dark-grayish-blue);
+  line-height: 1.3rem;
+  padding: 1.2rem 0;
+}
+.transform--text h2,
+.standout--text h2 {
+  color: var(--Very-dark-desaturated-blue);
+}
+.transform--text h5,
+.standout--text h5 {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+}
+
+.graphicdesign {
+  position: relative;
+}
+
+.graphicdesign--img {
+  margin: -4px;
+}
+.graphicdesign--text,
+.photography--text {
+  position: absolute;
+  bottom: 2rem;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.graphicdesign--text p,
+.photography--text p {
+  margin-top: 1rem;
+}
+.photography {
+  position: relative;
+}
+
+.testimonials {
+  margin: 1rem;
+}
+
+.testimonials img {
+  margin: 1rem auto;
+}
+
+.testimonials h5 {
+  margin: 5rem auto;
+  color: var(--Grayish-blue);
+  letter-spacing: 0.3rem;
+}
+.emily {
+  border-radius: 50%;
+  width: 30%;
+  display: block;
+  margin: auto;
+}
+
+.fourimages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0;
+}
+footer {
+  background-color: var(--light-cyan-footer);
+}
+footer ul {
+  color: var(--Dark-desaturated-cyan-graphic-design-text);
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  font-weight: 600;
+}
+
+footer img {
+  width: clamp(100px, 15%, 20%);
+  margin: 2.5rem auto;
+}
+.socialmediaicons {
+  margin: auto;
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/****************************************************************************************/
+
+@media only screen and (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: flex;
+  }
+
+  .creatives--logo {
+    width: 12%;
+  }
+  .creatives--nav-desktop {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  .creatives--nav-desktop ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    color: white;
+    align-items: center;
+  }
+  .creatives--nav-desktop ul :nth-child(4) {
+    background-color: white;
+    padding-top: 0.4rem;
+    height: 2rem;
+    width: 5rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    color: var(--Dark-desaturated-cyan-graphic-design-text);
+  }
+  .creatives {
+    grid-column: 1/3;
+  }
+  .creatives h1 {
+    left: 0%;
+    right: 0%;
+  }
+
+  .creatives-arrowdown {
+    top: 13.5rem;
+    right: -82%;
+    left: 48%;
+    width: 2.5%;
+  }
+
+  .transform {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .transform-imgcontainer {
+    width: 50%;
+  }
+  .transform--image {
+    width: 100%;
+    align-self: center;
+    object-fit: cover;
+  }
+
+  .transform--text,
+  .standout--text {
+    width: 50%;
+    align-self: center;
+    text-align: left;
+    padding: 5rem;
+  }
+
+  .standout {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: row;
+  }
+  .standout-img-box {
+    width: 50%;
+  }
+  .standout--text {
+    width: 50%;
+    align-self: center;
+  }
+
+  .standout--img {
+    width: 100%;
+    align-self: center;
+  }
+  .graphicandphotography {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .graphicdesign {
+    width: 100%;
+  }
+
+  .graphicdesign--img {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .graphicdesign--text,
+  .photography--text {
+    padding: 0 5rem;
+  }
+
+  .photography-img-box {
+    width: 100%;
+  }
+  .photography {
+    width: 100%;
+  }
+  .testimonials {
+    grid-column: 1/-1;
+    grid-row: 5/6;
+    width: 80%;
+    margin: auto;
+  }
+  .testimonial--peoplesection {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 2rem;
+  }
+
+  .fourimages {
+    grid-column: 1/-1;
+    grid-row: 6/7;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 100%;
+  }
+  .milkbottles,
+  .orange,
+  .cone,
+  .cubes {
+    width: 25%;
+  }
+
+  footer {
+    grid-column: 1/-1;
+    grid-row: 7/8;
+    width: 100%;
+  }
+}
